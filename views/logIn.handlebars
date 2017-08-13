@@ -1,0 +1,30 @@
+
+{{#section "head"}}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <title>Log In | PickUp</title>
+{{/section}}
+<div class="panel panel-default">
+        <div class="panel-body">
+            <h2>Login!</h2>
+            <form action="/login" method="post" enctype= "application/json">
+                <div class="form-group">
+                    <label for="username">Username </label>
+                    <input type="username" class="form-control" id="usernameInput" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="passwordInput" name="password" placeholder="Password">
+                </div>
+                <h4>{{message}}</h4>
+                <button type="submit" class="btn btn-success">Submit</button>
+                <p><a href="signup">Click here</a> to sign up!</p>
+            </form>
+        </div>
+</div>
+
+
+
+
